@@ -5,6 +5,7 @@
  * - Literal type
  * - unknown type
  * - never type
+ * - Type assertions (or casting)
  */
 
 function combine(
@@ -71,4 +72,19 @@ if (typeof userInput === "string") {
  */
 function thisThrows(): never {
   throw "This block";
+}
+
+function combiner1(
+  n1: Combinable,
+  n2: Combinable,
+  resultConversion: ResultType
+) {
+  //return n1 + n2; //This will result in an error
+  //The below line tells compiler that we have ensured that this is a string
+  console.log(n1 as string, n2 as string);
+  if (resultConversion === "num") {
+    return +n1 + +n2;
+  } else {
+    return n1.toString() + n2.toString();
+  }
 }

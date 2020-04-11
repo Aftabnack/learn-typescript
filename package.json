@@ -1,0 +1,14 @@
+{
+  "name": "learn-typescript",
+  "version": "1.0.0",
+  "description": "Project where I am learning TS",
+  "main": "index.js",
+  "repository": "https://github.com/Aftabnack/learn-typescript.git",
+  "author": "Aftab Khan <Aftabnack@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc"
+  }
+}

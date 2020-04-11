@@ -8,6 +8,7 @@
  * - tuple
  * - enum
  * - any (Anything)
+ * https://www.typescriptlang.org/docs/handbook/basic-types.html
  */
 
 function add(num1: number, num2: number) {

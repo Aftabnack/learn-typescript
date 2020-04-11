@@ -3,7 +3,7 @@ function add2(n1: number, n2: number): number {
 }
 
 //Doesn't have a return statement. void type.
-function print(n: number): void {
+function print2(n: number): void {
   console.log(n);
 }
 
