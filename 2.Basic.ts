@@ -45,12 +45,12 @@ function combiner(
   }
 }
 
-type Person = {
+type PersonObj = {
   name: string;
   age: number;
 };
-const user: Person = { age: 26, name: "Aftab" };
-const test: Person = { name: "Aftab", age: 25 };
+const user: PersonObj = { age: 26, name: "Aftab" };
+const test: PersonObj = { name: "Aftab", age: 25 };
 
 /**
  *  Unknown type
