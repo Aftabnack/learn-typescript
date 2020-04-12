@@ -38,6 +38,7 @@ const salesCopy = { describe: sales.describe };
 const salesCopy2 = { name: "fix it", describe: sales.describe };
 salesCopy2.describe(); //This will work, cuz the object has everything expected from Department2 class
 
+//----------------------------------------------------------------------------
 /**
  * Access modifiers
  */
@@ -59,6 +60,7 @@ const me = new Insaan("Aftab", 26);
 me.printInfo();
 // me.age; //Can't access since it is private
 
+//----------------------------------------------------------------------------
 /**
  * Simple Initialization
  */

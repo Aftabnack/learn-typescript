@@ -42,6 +42,7 @@ const person2: { name: string; age: number } = {
 };
 console.log(person2.name); //now it works again
 
+//----------------------------------------------------------------------------
 /**
  * Array type
  * - object type accepts array too
@@ -56,6 +57,7 @@ acceptObj(["test"]);
 let testAr: string[] = ["test", "this"];
 console.log(testAr);
 
+//----------------------------------------------------------------------------
 /**
  * Tuple type
  */
@@ -68,6 +70,7 @@ info.push(213); //This is an exception and can't be caught
 // info[1] = 1;
 // info = ['asdasd', 1];
 
+//----------------------------------------------------------------------------
 /**
  * enum
  */

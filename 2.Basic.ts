@@ -25,6 +25,7 @@ console.log(combine(2, 3, "num"));
 console.log(combine("sample ", "text ", "text"));
 //console.log(combine(1,2, 'blah')); //This will error
 
+//----------------------------------------------------------------------------
 /**
  * Type alias & Custom types
  */
@@ -52,6 +53,7 @@ type PersonObj = {
 const user: PersonObj = { age: 26, name: "Aftab" };
 const test: PersonObj = { name: "Aftab", age: 25 };
 
+//----------------------------------------------------------------------------
 /**
  *  Unknown type
  */
@@ -67,6 +69,7 @@ if (typeof userInput === "string") {
   userName = userInput; //Can assign inside type check
 }
 
+//----------------------------------------------------------------------------
 /**
  * Never type
  */

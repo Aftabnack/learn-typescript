@@ -14,6 +14,7 @@ class Greeter implements Greetable {
 const a: Greetable = new Greeter("Killer");
 // a.name = "test";//Checking with interface will enforce readonly, even if it not in the class
 
+//----------------------------------------------------------------------------
 /**
  * Interface is only the blueprint
  * Abstract can be a mixture of implementation & blueprint
@@ -39,6 +40,7 @@ class Greeter2 implements Greetable2 {
 const g1 = new Greeter2("Aftab", "Khan");
 console.log(g1.greet());
 
+//----------------------------------------------------------------------------
 /**
  * interface as function type
  */

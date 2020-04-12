@@ -22,6 +22,7 @@ const e1: AdminEmp = {
   startDate: new Date(),
 };
 
+//----------------------------------------------------------------------------
 /**
  * Type guards - Code guaranteeing something to be of a give type
  */
@@ -46,6 +47,7 @@ function printEmpInfo(emp: Admins | Employee) {
   }
 }
 
+//----------------------------------------------------------------------------
 /**
  * Another way of doing type guards is to add a common key
  */
@@ -73,6 +75,7 @@ function printAnimalInfo(an: Animal) {
   console.log("Animal is running at ", speed);
 }
 
+//----------------------------------------------------------------------------
 /**
  * Type casting
  */
@@ -81,6 +84,7 @@ if (el) {
   (el as HTMLInputElement).value = "Hi";
 }
 
+//----------------------------------------------------------------------------
 /**
  * Index property
  */
@@ -92,6 +96,7 @@ const errors: ErrorObj = {
   any_input: "asdasd",
 };
 
+//----------------------------------------------------------------------------
 /**
  * Function overloads
  */
