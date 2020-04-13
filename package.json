@@ -10,7 +10,7 @@
   "scripts": {
     "start": "tsc -w",
     "build": "tsc",
-    "start-project": "cd project && tsc -w",
+    "start-project": "tsc -w -p ./project",
     "serve-project": "cd project && lite-server ."
   },
   "devDependencies": {
