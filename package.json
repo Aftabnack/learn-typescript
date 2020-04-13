@@ -9,6 +9,11 @@
   "private": true,
   "scripts": {
     "start": "tsc -w",
-    "build": "tsc"
+    "build": "tsc",
+    "start-project": "cd project && tsc -w",
+    "serve-project": "cd project && lite-server ."
+  },
+  "devDependencies": {
+    "lite-server": "2.5.4"
   }
 }
