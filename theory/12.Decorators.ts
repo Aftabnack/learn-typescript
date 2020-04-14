@@ -62,7 +62,7 @@ function Autobind(
 }
 
 @logDest()
-class Trip2 {
+export class Trip2 {
   //   constructor(private dest: string) {} //This won't work since it is not publicly accessible
   constructor(public dest: string) {}
   getDest() {
