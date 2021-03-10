@@ -28,6 +28,9 @@ class Trip {
   }
 }
 
+const t1 = new Trip("Bangalore");
+console.log(t1);
+
 //--------------------------------------------------------------------------
 /**
  * Decorator which adds functionality to class
@@ -45,21 +48,21 @@ function logDest() {
   };
 }
 
-function Autobind(
-  _: any,
-  _2: string,
-  descriptor: PropertyDescriptor
-): PropertyDescriptor {
-  const origMethod = descriptor.value;
-  return {
-    enumerable: false,
-    configurable: true,
-    get() {
-      //This is going to ensure proper this is bound
-      return origMethod.bind(this);
-    },
-  };
-}
+// function Autobind(
+//   _: any,
+//   _2: string,
+//   descriptor: PropertyDescriptor
+// ): PropertyDescriptor {
+//   const origMethod = descriptor.value;
+//   return {
+//     enumerable: false,
+//     configurable: true,
+//     get() {
+//       //This is going to ensure proper this is bound
+//       return origMethod.bind(this);
+//     },
+//   };
+// }
 
 @logDest()
 export class Trip2 {
@@ -100,3 +103,7 @@ class Product {
     this.price = p;
   }
 }
+
+const p1 = new Product("Apple", 12);
+console.log(p1);
+console.log(doValidate);
